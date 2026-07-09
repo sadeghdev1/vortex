@@ -1,0 +1,137 @@
+@use '../../styles/variables.scss' as *;
+
+.hero {
+  display: flex;
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(../../assets/images/bugatti.jpg);
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+}
+
+.inner {
+  display:flex;
+  gap:24px;
+  align-items:center;
+}
+
+.left {
+  flex:1;
+}
+.left img {
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  top: -5rem;
+  right: -3rem;
+}
+.right { 
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero h1 {
+  font-size: 177px;
+  font-weight: 750;
+  font-style: italic;
+  // padding-top: 1.5rem;
+  padding: 0 0 11rem;
+  color: #ffff;
+}
+
+.content {
+  padding-top: 2.2rem;
+  // padding-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 27px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.cta button {
+  margin-left: 8px;
+  margin-top: 10px;
+  padding: 10px 3rem 10px 3rem;
+  border-radius: 12px;
+  background: $accent;
+  color: #fff;
+  border:none;
+  cursor:pointer;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+    // box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 1);
+  }
+
+  &:focus {
+    background: $accent2;
+  }
+}
+
+// Mobile
+@media (max-width: 576px) {
+
+  .hero {
+    height: fit-content;
+    background-size: 80rem;
+    background-position: 31% center;
+
+    & h1 {
+      font-size: 90px;
+      padding-top: 2.4rem;
+      padding-right: 11px;
+    }
+
+    & h2 {
+      font-size: 29px;
+    }
+
+    & p {
+      font-size: 14px;
+      padding: 0 3rem 0 3rem;
+    }
+  }
+
+  .content {  
+    padding-top: 3rem;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+    .hero {
+    height: fit-content;
+    background-size: 80rem;
+
+    & h1 {
+      font-size: 99px;
+      padding-top: 2rem;
+    }
+
+    & h2 {
+      font-size: 29px;
+    }
+
+    & p {
+      font-size: 16px;
+      padding: 0 3rem 0 3rem;
+    }
+  }
+
+  .content {  
+    margin-top: 3rem;
+  }
+}

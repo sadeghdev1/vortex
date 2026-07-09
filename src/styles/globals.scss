@@ -1,0 +1,69 @@
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+@import url('https://v1.fontapi.ir/css/Estedad');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Estedad', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  // transition: .3s;
+}
+
+body {
+  direction: rtl;
+  background:#fff;
+  color:#111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/*============ Spinner & Scrollbar styles ============*/
+
+/* bar color */
+#nprogress .bar {
+  background: $accent !important;
+}
+
+/* spinner color(loading circle) */
+#nprogress .spinner-icon {
+  border-top-color: $accent;
+  border-left-color: $accent;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* thickness */
+}
+
+::-webkit-scrollbar-track {
+  background: #1f242d; /* bg */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent;
+  border-radius: 10px;
+
+  &:hover {
+  background: $accent; /* hover */
+  }
+}
+
+/* for Firefox */
+* {
+  scrollbar-width: thick;
+  scrollbar-color: $accent #1f242d;
+}

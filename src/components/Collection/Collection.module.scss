@@ -1,0 +1,370 @@
+@use "../../styles/variables.scss" as *;
+
+.collection {
+    padding: 9rem 0 0 0;
+    background-image: url(../../assets/images/Exclude.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 845px;
+    margin-top: 5rem;
+    text-align: center;
+    align-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rarrow {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 15px;
+  right: 50px;
+  padding-top: 5px;
+  border: none;
+  background: $accent2;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.rarrow:hover {
+  background: #D4717D;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.rarrow:focus {
+    background: #000;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.35); 
+}
+
+.larrow {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: 15px;
+  left: 50px;
+  padding-top: 5px;
+  border: none;
+  background: $accent2;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.larrow:hover {
+  background: #D4717D;
+  box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.35);
+}
+.larrow:focus {
+    background: #000;
+    box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.35); 
+}
+
+.slider {
+  width: 90%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: .3s ease;
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
+  gap: 20px;
+  will-change: transform;
+}
+
+.card {
+  width: 351px;
+  height: 525px;
+  padding: 20px;
+  margin: 17px;
+  background: white;
+  border: 5px solid transparent;
+  border-radius: 21px;
+  text-align: center;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+  overflow: hidden;
+
+  &:hover {
+    border-color: #F46270;
+    transform: scale(1.03);
+    box-shadow: 5px 9px 22px 0px #0000001A;
+
+    box-shadow: 19px 36px 41px 0px #00000017;
+    box-shadow: 42px 82px 55px 0px #0000000D;
+    box-shadow: 74px 145px 65px 0px #00000003;
+    box-shadow: 116px 227px 71px 0px #00000000;
+
+    // box-shadow: -6px -10px 41px 0px rgba(212, 113, 125, 1);
+    // box-shadow: 12px 8px 41px 0px rgba(212, 113, 125, 1);
+  }
+}
+
+.carImage {
+  width: 300px;
+  height: 140px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.name {
+  font-size: 27px;
+  font-weight: 700;
+  margin: 8px 0 20px;
+}
+
+.card .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.orderBtn {
+  background: $accent2;
+  color: white;
+  width: 309px;
+  padding: 10px;
+  border-radius: 21px;
+  border: none;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover { box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.35); }
+}
+
+.detailsBtn {
+  background: transparent;
+  border: 2px solid $accent2;
+  color: $accent2;
+  width: 309px;
+  padding: 10px;
+  border-radius: 21px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover { background: #FFD5DA; }
+  &:focus { background: #2B0307; color: #fff; }
+}
+
+// /* وقتی دکمه بعدی زده میشه */
+// .next .card {
+//   animation: slideNext 0.25s ease;
+// }
+
+// /* وقتی دکمه قبلی زده میشه */
+// .prev .card {
+//   animation: slidePrev 0.25s ease;
+// }
+
+// @keyframes slideNext {
+//   from { transform: translateX(100px); opacity: 0; }
+//   to   { transform: translateX(0); opacity: 1; }
+// }
+
+// @keyframes slidePrev {
+//   from { transform: translateX(-100px); opacity: 0; }
+//   to   { transform: translateX(0); opacity: 1; }
+// }
+
+.slideNext {
+  transform: translateX(-20px);
+}
+
+.slidePrev {
+  transform: translateX(20px);
+}
+
+.active {
+    transform: scale(1.03);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+  .collection {
+    background-size: 120% 90%;
+    padding-top: 7rem;
+    height: 770px;
+  }
+
+  .slider {
+      overflow: hidden;
+      height: 600px;
+  }
+
+  .card {
+    width: 250px;
+    height: 453px;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+
+    & .row {
+    font-size: 17px;
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 16px 0px rgba(212, 113, 125, 1);
+    }
+  }
+
+  .carImage {
+    width: 200px;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .orderBtn {
+    width: 230px;
+    height: 50px;
+    font-size: 17px;
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .detailsBtn {
+    width: 230px;
+    height: 50px;
+    font-size: 17px;
+    padding: 0;
+    margin-top: 17px;
+    text-align: center;
+  }
+
+  .larrow {
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .larrow img {
+    width: 20px;
+  }
+
+  .rarrow {
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .rarrow img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+  .card { flex: 0 0 calc(83%); }
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+  .card { margin: 1rem !important; }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .collection {
+    background-size: 110% 90%;
+    padding-top: 5rem;
+    height: 700px;
+  }
+
+    .slider {
+      overflow: hidden;
+      height: 600px;
+    }
+
+  .card {
+    width: 277px;
+    height: 389px;
+    margin: 1px;
+    padding-top: 0;
+    margin-top: 0;
+
+    & .row {
+    font-size: 18px;
+    margin-bottom: 0;
+    }
+
+    // &:hover {
+    //   box-shadow: 1px 1px 10px 0px rgba(212, 113, 125, 1);
+    // }
+  }
+
+  .carImage {
+    width: 210px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .name {
+    font-size: 22px;
+    margin-top: -1rem;
+    margin-bottom: 0;
+  }
+
+  .orderBtn {
+    width: 234px;
+    height: 47px;
+    font-size: 17px;
+    padding: 0;
+    border-radius: 15px;
+    margin-top: 11px;
+    text-align: center;
+  }
+
+  .detailsBtn {
+    width: 234px;
+    height: 47px;
+    font-size: 17px;
+    padding: 0;
+    border-radius: 15px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .larrow {
+    width: 51px;
+    height: 51px;
+    left: 10px;
+  }
+
+  .rarrow {
+    width: 51px;
+    height: 51px;
+    right: 10px;
+  }
+
+  button img {
+    width: 41px;
+  }
+}

@@ -1,0 +1,80 @@
+@use "../../styles/variables.scss" as *;
+ 
+ .about {
+    padding:40px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+} 
+ .about h3 {
+    color: $accent;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 4rem 0 2rem;
+} 
+ .about p {
+    color: #000;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.Mclaren {
+    width: 800px;
+    height: 220px;
+    margin: 3rem 0 1rem 0;
+}
+
+.about h4 {
+    color: $accent;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+// Mobile
+@media (max-width: 576px) {
+    .Mclaren {
+        width: 341px;
+        height: 100px;
+    }
+
+    .about p {
+        font-size: 18px;
+        padding: 1rem 2rem 1rem 2rem;
+        text-align: justify;
+    }
+
+    .about h4 {
+        font-size: 18px;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .about h3 {
+        font-size: 24px;
+    }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Mclaren {
+        width: 661px;
+        height: 197px;
+        justify-content: center;
+    }
+
+    .about p {
+        font-size: 23px;
+        font-weight: 500;
+        padding: 1rem 4rem 1rem 4rem;
+        text-align: justify;
+    }
+
+    .about h3 {
+        font-size: 28px;
+    }
+
+    .about h4 {
+        font-size: 26px;
+    }
+}
