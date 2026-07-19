@@ -4,6 +4,11 @@ A modern, responsive, and visually appealing car showcase landing page built wit
 
 Designed with a clean UI, smooth animations, glassmorphism effects, and a mobile-first responsive experience, Vortex demonstrates modern front-end development practices and component-based architecture.
 
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite)
+![SCSS](https://img.shields.io/badge/SCSS-Modules-CC6699?logo=sass)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-success)
+
 ---
 
 ## 🌐 Live Demo
