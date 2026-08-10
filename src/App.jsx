@@ -3,13 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar/Navbar';
-import initScrollReveal from "./utils/initScrollReveal";
 
 export default function App(){
-
-  useEffect(() => {
-    initScrollReveal();
-  }, []);
 
   return (
     <>
