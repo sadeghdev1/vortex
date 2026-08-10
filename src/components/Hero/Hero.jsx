@@ -7,7 +7,7 @@ export default function Hero(){
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.left}>
-            <h1>Vortex</h1>
+            <h1 className='.reveal-top'>Vortex</h1>
             {/* <img src={Bugatti} /> */}
             <div className={styles.content}>
               <h2>غوطه‌ور در گرداب سرعت</h2>
