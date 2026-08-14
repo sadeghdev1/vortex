@@ -5,8 +5,8 @@ export default function Blog(){
   return (
     <section id="blog" className={styles.blog}>
       <div className="container">
-        <h4>وبلاگ</h4>
-        <div className={styles.list}>
+        <h4 className='reveal-top'>وبلاگ</h4>
+        <div className={`${styles.list} reveal-right`}>
           
           <article className={styles.post}>
             <img src={Lambo} />

@@ -3,9 +3,9 @@ import styles from './Contact.module.scss';
 export default function Contact(){
   return (
     <section id="contact" className={styles.contact}>
-      <h4>با ما در ارتباط باشید</h4>
+      <h4 className='reveal-top'>با ما در ارتباط باشید</h4>
       <div className={styles.container}>
-        <form className={styles.form} onSubmit={(e)=>{e.preventDefault(); alert('پیام ارسال شد')}}>
+        <form className={`${styles.form} reveal`} onSubmit={(e)=>{e.preventDefault(); alert('پیام ارسال شد')}}>
 
           <div className={styles.inputbox}>
             <div>

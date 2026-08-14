@@ -45,7 +45,7 @@ export default function Collection() {
 
         <div className={styles.slider}>
           {getVisibleCars().map((car) => (
-            <div key={car.id} className={styles.card}>
+            <div key={car.id} className={`${styles.card} reveal`}>
               <img src={car.img} alt={car.name} className={styles.carImage} />
               <h3 className={styles.name}>{car.name}</h3>
 

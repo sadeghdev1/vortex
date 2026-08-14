@@ -9,7 +9,7 @@ import Logo from '../../assets/images/vortex-logo.jpeg'
 export default function Footer(){
   return (
     <footer className={styles.footer}>
-      <div className={styles.cols}>
+      <div className={`${styles.cols} reveal`}>
           <div className={styles.col1}>
             <h4>تماس با ما</h4>
             <ul>
