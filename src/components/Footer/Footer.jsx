@@ -41,8 +41,8 @@ export default function Footer(){
       <div className={styles.row1}>
         <a href="#"><img src={insta} /></a>
         <hr />
-        <h3>تمامی حقوق محفوظ است.</h3>
-        <h3> &copy;<script>document.write(new Date().getFullYear());</script> Vortex | All Rights Reserved.</h3>
+        <p>تمامی حقوق محفوظ است.</p>
+        <h3>©2026 Vortex | All Rights Reserved</h3>
         <h3>Developed by Sadegh Movahed</h3>
       </div>
     </footer>
