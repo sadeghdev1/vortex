@@ -41,9 +41,10 @@ export default function Footer(){
       <div className={styles.row1}>
         <a href="#"><img src={insta} /></a>
         <hr />
-        <p>تمامی حقوق محفوظ است.</p>
+        <h2>VORTEX</h2>
+        <h3>CAR GALLERY</h3>
+        <h3>Developed with passion</h3>
         <h3>©2026 Vortex | All Rights Reserved</h3>
-        <h3>Developed by Sadegh Movahed</h3>
       </div>
     </footer>
   )
