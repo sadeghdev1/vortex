@@ -43,8 +43,8 @@ export default function Footer(){
         <hr />
         <h2>VORTEX</h2>
         <h3>CAR GALLERY</h3>
-        <h3>Developed with passion</h3>
-        <h3>©2026 Vortex | All Rights Reserved</h3>
+        <h4>Developed with passion</h4>
+        <h4>©2026 Vortex | All Rights Reserved</h4>
       </div>
     </footer>
   )
